@@ -39,9 +39,9 @@ curl -sS -X POST "https://ronanis.com/api/?mode=key_create" -H "Content-Type: ap
 
 Create Wallet (main)
 --------------------
->>>>
+```bash
 curl -sS -X POST "https://ronanis.com/api/?mode=wallet_create" -H "X-RON-KEY: RON-XXXXXXXXXXXX" -H "Content-Type: application/json" -d '{"net":"main"}'
-<<<<
+
 
 Wallet Balance
 --------------
