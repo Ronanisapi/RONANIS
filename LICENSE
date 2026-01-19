@@ -199,3 +199,63 @@
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.
+
+RONANIS API BLOCKCHAIN
+Copyright 2026 Ronanis
+
+This product includes software developed by Ronanis
+and is licensed under the Apache License, Version 2.0.
+
+--------------------------------------------------
+NOTICE OF INTENT
+--------------------------------------------------
+
+RONANIS API BLOCKCHAIN is a protocol-level infrastructure project.
+
+It is NOT:
+- a wallet
+- an exchange
+- a custodial service
+- a financial institution
+
+RONANIS exposes blockchain node capabilities via deterministic HTTP APIs.
+All value settlement occurs on the underlying blockchain network.
+
+--------------------------------------------------
+CLARIFICATIONS
+--------------------------------------------------
+
+- This software provides infrastructure only.
+- No guarantees are made regarding availability, uptime, performance,
+  financial outcomes, or data persistence.
+- Users are solely responsible for how they use this software,
+  including compliance with local laws and regulations.
+
+--------------------------------------------------
+PROTOCOL IDENTITY
+--------------------------------------------------
+
+The names "RONANIS", "RONANIS API BLOCKCHAIN", and related identifiers
+are project identifiers.
+
+Use of these names in derivative works must NOT imply endorsement,
+affiliation, or official support unless explicitly authorized in writing
+by the Ronanis project.
+
+--------------------------------------------------
+ENVIRONMENT CONVENTIONS (Non-binding)
+--------------------------------------------------
+
+The following domain conventions are used by the Ronanis project:
+
+- ronanis.com  : production environment
+- ronanis.org  : test environment
+- agi.net      : compute-only / AI environment
+
+--------------------------------------------------
+LICENSE NOTICE
+--------------------------------------------------
+
+This NOTICE file is provided for informational and clarification purposes
+only and does NOT modify, replace, or override the terms of the
+Apache License, Version 2.0.
