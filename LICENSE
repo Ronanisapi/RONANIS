@@ -250,7 +250,7 @@ The following domain conventions are used by the Ronanis project:
 
 - ronanis.com  : production environment
 - ronanis.org  : test environment
-- agi.net      : compute-only / AI environment
+- ronanis.net  : compute-only / AI environment
 
 --------------------------------------------------
 LICENSE NOTICE
