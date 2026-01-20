@@ -1,0 +1,23 @@
+## Tiny example — robust-ish POST (Python)
+import requests, time, uuid
+
+url = "https://ronanis.com/api/?mode=wallet_send"
+headers = {"X-RON-KEY": "RON-XXXX", "Content-Type": "application/json"}
+body = {"wallet_id": "w_XXX", "to": "bc1...", "amount_sat": 50000, "speed": "normal"}
+request_id = str(uuid.uuid4())  # store this in DB to enforce idempotency
+
+for attempt in range(3):
+    try:
+        r = requests.post(url, json=body, headers=headers, timeout=10)
+        r.raise_for_status()
+        resp = r.json()
+        if resp.get("ok"):
+            print("sent:", resp["result"]["txid"])
+            break
+        else:
+            raise RuntimeError(resp)
+    except (requests.RequestException, RuntimeError) as e:
+        time.sleep(2 ** attempt)
+        if attempt == 2:
+            # record failure, alert, reconcile later
+            raise
